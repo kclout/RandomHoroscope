@@ -29,6 +29,18 @@ const userInfo = {
     }
 }
 
+// greetings //
+const greeting = ['g1 ', 'g2 ', 'g3 ', 'g4 ', 'g5 ', 'g6 ', 'g7 ', 'g8 ', 'g9 ', 'g10 '];
+
+// fortunes //
+const fortune = [['gf1', 'gf2', 'gf3', 'gf4', 'gf5', 'gf6', 'gf7', 'gf8', 'gf9', 'gf10'], ['bf1', 'bf2', 'bf3', 'bf4', 'bf5', 'bf6', 'bf7', 'bf8', 'bf9', 'bf10'], ['mf1', 'mf2', 'mf3', 'mf4', 'mf5', 'mf6', 'mf7', 'mf8', 'mf9', 'mf10']];
+
+// advice //
+const advice = [['ga1', 'ga2', 'ga3', 'ga4', 'ga5', 'ga6', 'ga7', 'ga8', 'ga9', 'ga10'], ['ba1', 'ba2', 'ba3', 'ba4', 'ba5', 'ba6', 'ba7', 'ba8', 'ba9', 'ba10'], ['ma1', 'ma2', 'ma3', 'ma4', 'ma5', 'ma6', 'ma7', 'ma8', 'ma9', 'ma10']];
+
+// goodbye //
+const goodbye = ['gb1', 'gb2', 'gb3', 'gb4', 'gb5', 'gb6', 'gb7', 'gb8', 'gb9', 'gb10'];
+
 // determining star sign //
 const findStarSign = (arr) => {
     let starSign = '';
@@ -139,7 +151,13 @@ const findStarSign = (arr) => {
     }
 }
 
+// choosing a random number //
+const randNum = arr => {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
 /*userInfo.birthDay = 10;
 userInfo.birthMonth = 2;
 console.log(`${userInfo.birthMonth}/${userInfo.birthDay}`);
-console.log(findStarSign(userInfo));*/
+console.log(findStarSign(userInfo));
+console.log(randNum(greeting));*/
