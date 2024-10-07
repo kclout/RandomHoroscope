@@ -31,16 +31,13 @@ const userInfo = {
 }
 
 // greetings //
-const greeting = ['g1 ', 'g2 ', 'g3 ', 'g4 ', 'g5 ', 'g6 ', 'g7 ', 'g8 ', 'g9 ', 'g10 '];
+const greeting = ['Hello wandering', 'Welcome traveling', 'Greetings wise', 'Hello charming', 'Welcome drifting', 'Greetings bewildered', 'Hello mysterious', 'Welcome inquisitive child of', 'Greetings lost soul of', 'Greetings marvelous'];
 
 // fortunes (good, bad, or neutral) //
-const fortune = [['gf1', 'gf2', 'gf3', 'gf4', 'gf5', 'gf6', 'gf7', 'gf8', 'gf9', 'gf10'], ['bf1', 'bf2', 'bf3', 'bf4', 'bf5', 'bf6', 'bf7', 'bf8', 'bf9', 'bf10'], ['mf1', 'mf2', 'mf3', 'mf4', 'mf5', 'mf6', 'mf7', 'mf8', 'mf9', 'mf10']];
+const fortune = [['The universe has great plans for you today', 'Your life will soon take an exciting turn', 'You will learn an important lesson today', 'Your future is looking bright', 'I see great success in your future', 'You will experience a bit of extra luck today', 'You will soon find all that you have been seeking', 'I see a future brimming with happiness', 'A generous future awaits you', 'Your day will be filled with enrichment and joyousness'], ['Your future is looking somewhat dim', 'Your path is full of many roadblocks', 'I see great hardship in your future', 'You will experience great misfortue today', 'You will experience a bit of bad luck today', 'All that you seek in life remains lost today', 'I see a future teeming with struggles', 'The universe shall give you a grave warning today', 'Your day will be filled with difficulty and strain', 'A worrisome future awaits you'], ['Your fate is undecided today', 'Your fate is in your hands', 'Your future may be filled with enchantment or hardship', 'I see great mystery in your future', 'The universe has handed you an ambiguous fate', 'You will have neutral luck today', 'Today may be filled with uncertainties', 'Your actions will determine your fate today', 'Your future appears neither good nor unpleasant', 'The knowledge you seek may or may not come to you']];
 
 // advice (good, bad, or neutral) //
-const advice = [['ga1', 'ga2', 'ga3', 'ga4', 'ga5', 'ga6', 'ga7', 'ga8', 'ga9', 'ga10'], ['ba1', 'ba2', 'ba3', 'ba4', 'ba5', 'ba6', 'ba7', 'ba8', 'ba9', 'ba10'], ['ma1', 'ma2', 'ma3', 'ma4', 'ma5', 'ma6', 'ma7', 'ma8', 'ma9', 'ma10']];
-
-// goodbye //
-const goodbye = ['gb1', 'gb2', 'gb3', 'gb4', 'gb5', 'gb6', 'gb7', 'gb8', 'gb9', 'gb10'];
+const advice = [['continue traveling the path ahead of you', 'remain true to yourself', 'never give up on your dreams', 'protect the blessings bestowed upon you', 'persist with your journey towards illumination', 'share the blessings of good fortune with those around you', 'focus on the positive energy you bring into the universe', 'continue practicing gratitude in your life', 'remember to be kind to yourself and others', 'remember to trust in yourself and others'], ['practice self-reflection and embrace self-improvement', 'think postitively to manifest more positive outcomes', 'let bad times pass to allow for the good times', 'focus your energy on the positives in life', 'not let obstacles in life bring you down', 'figure out what matters most to you in life', 'allow the universe to guide you towards happiness', 'reflect on the company you keep', 'not stray from the path ahead of you', 'seek comfort from those around you'], ['open your mind to change', 'have faith in yourself and your decisions', 'embrace the unknown with confidence', 'remain patient as you seek clarity', 'reflect on the changes in your life', 'be accepting of any outcome', 'turn to the universe for guidance', 'seek answers in unusal places', 'look for signs in the world around you', 'reflect on your surroundings']];
 
 // determine star sign //
 const findStarSign = user => {
@@ -161,12 +158,11 @@ const createMyFortune = () => {
     // determine if advice given is for good, bad, or neutral fortune given fortune type //
     let adviceType = fortune.indexOf(fortuneType);
     let myAdvice = randArr(advice[adviceType]);
-    let myGoodbye = randArr(goodbye);  
     if(!myStarSign) {
         return 'Your fate is unclear...perhaps an error blocks your path to guidance?';
     }
     else {
-        return `${myGreeting} ${myStarSign},\n${myFortune}\n${myAdvice}\n${myGoodbye}`;
+        return `${myGreeting} ${myStarSign},\n${myFortune}.\nYou must ${myAdvice}.`;
     }
 }
 
