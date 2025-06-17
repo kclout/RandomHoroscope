@@ -12,7 +12,7 @@ Using the Random Horoscope Generator is very simple!
 - Node.js
 
 ### 🌙 Instructions
-1. Install RandomHoroscope.js anywhere you would like and open the file with your preferred code editor.
+1. Install [RandomHoroscope.js](https://github.com/kclout/RandomHoroscope/blob/main/RandomHoroscope.js) anywhere you would like and open the file with your preferred code editor.
 1. At the bottom of the code, enter your birthday in `userInfo.myBirthday()`. This should be in (month, day) format and should only use numbers.
 2. Run the program using the command `node /FILEPATH/RandomHoroscope.js`.
 3. Get your unique horoscope!
